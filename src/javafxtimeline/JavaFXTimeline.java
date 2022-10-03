@@ -24,8 +24,8 @@ import javafx.util.Duration;
  */
 public class JavaFXTimeline extends Application {
 
-    public static double ballSpeedX = 1;
-    public static double ballSpeedY = 1;
+    public static double ballSpeedX = 5;
+    public static double ballSpeedY = 5;
 
     @Override
     public void start(Stage primaryStage) {
@@ -65,7 +65,7 @@ public class JavaFXTimeline extends Application {
 
         };
 
-        Timeline animation = new Timeline(new KeyFrame(Duration.millis(10), eH));
+        Timeline animation = new Timeline(new KeyFrame(Duration.millis(500), eH));
 
         animation.setCycleCount(Timeline.INDEFINITE);
 
